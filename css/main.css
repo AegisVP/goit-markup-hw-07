@@ -851,10 +851,12 @@ ul {
   list-style: none;
 }
 
-.portfolio__item {
+.portfolio__link {
+  display: block;
   position: relative;
   margin: 15px;
   font-size: 0;
+  text-decoration: none;
   background-color: #ffffff;
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
@@ -862,7 +864,7 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms, -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
 }
 
-.portfolio__item:hover, .portfolio__item:focus {
+.portfolio__link:hover, .portfolio__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -870,10 +872,6 @@ ul {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
-}
-
-.portfolio__link {
-  text-decoration: none;
 }
 
 .portfolio__text {
@@ -908,8 +906,8 @@ ul {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__item:hover .portfolio__description,
-.portfolio__item:focus .portfolio__description {
+.portfolio__link:hover .portfolio__description,
+.portfolio__link:focus .portfolio__description {
   -webkit-transform: translateY(0);
           transform: translateY(0);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 100ms;
