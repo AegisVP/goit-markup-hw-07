@@ -1,42 +1,16 @@
-// #region Footer section styles
+/* #region Footer section styles */
 
 .footer {
   /* min-height: 252px; */
-  padding: 0 0 60px;
+  padding: 60px 0;
   background-color: $dark-grey-background;
-}
-
-.footer__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-
-  @media (min-width: 768px) {
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: space-around;
-  }
 }
 
 .footer-address,
 .footer-joinus,
 .footer-signup {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 60px;
-
-  @media (min-width: 768px) { // and (max-width: 1199.98px)
-    min-width: 260px;
-  }
-}
-
-.footer-address {
-  @media (min-width: 1200px) {
-    align-items: flex-start;
-    margin-right: 70px;
-  }
+  flex-flow: column;
 }
 
 .footer-joinus__title,
@@ -52,17 +26,16 @@
   text-transform: uppercase;
 }
 
-
 .footer-address__logo {
   color: $contrast-text;
 }
 
 /* #endregion */
+/* #region Footer Address section styles */
 
-// #region Footer Address section styles
-
-// .footer-address {
-// }
+.footer-address {
+  margin-right: 70px;
+}
 
 .footer-address__text {
   display: block;
@@ -77,8 +50,7 @@
 
 .footer-address__link {
   display: inline-block;
-  margin-top: 8px;
-  @media (min-width: 1200px) { margin-top: 9px; }
+  margin-top: 9px;
   margin-bottom: 0;
 
   line-height: 1.71;
@@ -94,14 +66,13 @@
   }
 }
 
-// #endregion
+/* #endregion */
+/* #region Footer Join-Us social links styles */
 
-// #region Footer Join-Us social links styles
-
-// .footer-joinus {
-//   margin-right: 93px;
-//   padding-top: 12px;
-// }
+.footer-joinus {
+  margin-right: 93px;
+  padding-top: 12px;
+}
 
 .icon--footer-style {
   background-color: #444444;
@@ -118,33 +89,24 @@
   color: $contrast-text;
 }
 
-// #endregion
+/* #endregion */
+/* #region Footer Sign up form styles */
 
-// #region Footer Sign up form styles
-
-// .footer-signup {
-//   margin-right: 0;
-//   padding-top: 12px;
-// }
+.footer-signup {
+  margin-right: 0;
+  padding-top: 12px;
+}
 
 .form-signup {
   display: flex;
-  flex-direction: column;
-  @media (min-width: 1200px) {
-    flex-direction: row;
-  }
+  flex-direction: row;
 }
 
 .form-signup__input {
   height: 50px;
-  width: 450px;
+  width: 358px;
   padding: 15px 16px;
-  margin: 0 0 20px;
-
-  @media (min-width: 1200px) {
-    width: 358px;
-    margin: 0 12px 0 0;
-  }
+  margin-right: 12px;
 
   color: rgba(255, 255, 255, 0.6);
 
@@ -170,4 +132,4 @@
   color: $contrast-text;
 }
 
-// #endregion
+/* #endregion */
